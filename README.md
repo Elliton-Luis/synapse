@@ -1,4 +1,5 @@
 # Synapse CLI
+
 ## Introdução
 A Synapse é uma ferramenta de linha de comando (CLI) para gerenciar commits no Git, construída com a biblioteca padrão do Go, focando em simplicidade, zero dependências externas e economia de tokens para garantir mensagens de commit rápidas e contextualmente precisas.
 
@@ -209,13 +210,3 @@ The interface follows the style of professional tools such as git, docker, and k
 - [x] Layer 5 — Main execution loop (Generation, Approval, Recreation, and Commit execution).
 - [x] Layer 6 — Architectural polish (CLI Flags, 503 Fallback logic, and Language subcommands).
 - [x] Layer 7 — Architectural refactor into specialized packages, expanded sanitization, progressive temperature, and a professional terminal interface.
-
-## Contributing
-Contributions focusing on improving the diff extraction logic, security sanitization patterns, or overall performance are welcome.
-
-### Steps to Contribute
-1. Fork the repository.
-2. Create a feature branch (git checkout -b feature/NewFeature).
-3. Commit your changes (using syn).
-4. Push to the branch (git push origin feature/NewFeature).
-5. Open a Pull Request.
