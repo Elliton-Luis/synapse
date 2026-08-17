@@ -35,8 +35,8 @@ func Load() (*Config, error) {
 }
 
 func setup() (*Config, error) {
-	fmt.Println("\n🔧 Primeira execução! Vamos configurar o Synapse.\n")
-	fmt.Println("  Forneça as chaves de API necessárias (pressione Enter para pular caso não use o provider).")
+	fmt.Println("\nPrimeira execução: configure as chaves de API do Synapse.")
+	fmt.Println("  Forneça as chaves dos providers que deseja usar (Enter para pular um provider).")
 
 	reader := bufio.NewReader(os.Stdin)
 
@@ -49,7 +49,7 @@ func setup() (*Config, error) {
 	geminiKey = strings.TrimSpace(geminiKey)
 
 	if groqKey == "" && geminiKey == "" {
-		return nil, fmt.Errorf("você precisa fornecer pelo menos uma API Key")
+		return nil, fmt.Errorf("informe ao menos uma chave de API (GROQ ou GEMINI)")
 	}
 
 	// Salva com o idioma inglês por padrão
@@ -58,7 +58,7 @@ func setup() (*Config, error) {
 		return nil, err
 	}
 
-	fmt.Printf("\n✓ .env criado com sucesso.\n\n")
+	fmt.Printf("\n[OK] Arquivo .env criado com sucesso.\n\n")
 	return &Config{GroqKey: groqKey, GeminiKey: geminiKey, Lang: "en"}, nil
 }
 
