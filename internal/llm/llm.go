@@ -14,7 +14,7 @@ const (
 
 	// DefaultGroqModel and DefaultGeminiModel are the models used when the
 	// --model flag is not provided.
-	DefaultGroqModel   = "llama-3.3-70b-versatile"
+	DefaultGroqModel   = "openai/gpt-oss-20b"
 	DefaultGeminiModel = "gemini-2.5-flash"
 
 	// DefaultGroqTemperature and DefaultGeminiTemperature are the generation
