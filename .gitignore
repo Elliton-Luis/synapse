@@ -2,3 +2,10 @@
 # Ignorado automaticamente pelo CLI AI Commit
 commit_pattern.md
 commit_pattern_pt.md
+
+# Ambientes virtuais e variáveis de ambiente
+.env
+*.env
+venv/
+**/venv/
+__pycache__/
